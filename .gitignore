@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+catboost_info/
+.venv/
+venv/
+
+/archive/
+/archive.zip
+/data/raw/
+/data/interim/
+/data/processed/
+/FIFA21_market_value_sample_1000.csv
+/FIFA21_market_value_sample_1000.xlsx

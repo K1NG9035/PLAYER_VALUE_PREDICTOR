@@ -1,0 +1,7 @@
+model_name: "blender"
+method: "non_negative_linear" # non_negative_linear or ridge
+ridge_alpha: 1.0
+conformal:
+  coverage_target: 0.90
+  alpha: 0.10
+  calibration_transition: "2019->2020"

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fifa-value-forecast"
+version = "0.1.0"
+description = "FIFA Player Value Forecasting with Calibrated Uncertainty Intervals"
+authors = [{ name = "EA Sports ML Engineering" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "lightgbm",
+    "catboost",
+    "torch",
+    "optuna",
+    "shap",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "pyarrow",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+fifa-value = "fifa_value.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]

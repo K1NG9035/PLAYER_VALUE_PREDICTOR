@@ -1,0 +1,21 @@
+model_name: "catboost"
+common_params:
+  loss_function: "RMSE"
+  eval_metric: "RMSE"
+  iterations: 1200
+  learning_rate: 0.05
+  depth: 6
+  l2_leaf_reg: 3.0
+  random_seed: 42
+  early_stopping_rounds: 40
+  verbose: 0
+  thread_count: -1
+
+target_a_params:
+  learning_rate: 0.05
+  depth: 6
+
+target_b_params:
+  learning_rate: 0.04
+  depth: 6
+  l2_leaf_reg: 5.0

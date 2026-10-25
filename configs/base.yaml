@@ -1,0 +1,36 @@
+seed: 42
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  archive_path: "archive.zip"
+  seasons: [15, 16, 17, 18, 19, 20, 21]
+  target_transition_test: "2020->2021"
+  predict_season: 2021
+  predict_target_year: 2022
+
+cv:
+  folds:
+    - name: "fold_1"
+      train_transitions: ["2015->2016", "2016->2017"]
+      val_transition: "2017->2018"
+    - name: "fold_2"
+      train_transitions: ["2015->2016", "2016->2017", "2017->2018"]
+      val_transition: "2018->2019"
+    - name: "fold_3"
+      train_transitions: ["2015->2016", "2016->2017", "2017->2018", "2018->2019"]
+      val_transition: "2019->2020"
+  test_fold:
+    name: "test_fold"
+    train_transitions: ["2015->2016", "2016->2017", "2017->2018", "2018->2019", "2019->2020"]
+    calib_transition: "2019->2020"
+    test_transition: "2020->2021"
+
+features:
+  max_history_length: 4
+  top_k_traits: 15
+  top_k_tags: 15
+  min_value_threshold: 0
+
+targets:
+  - "target_a" # level: log1p(value_{t+1})
+  - "target_b" # growth: log1p(value_{t+1}) - log1p(value_t)

@@ -1,0 +1,97 @@
+{
+  "total_records": 122841,
+  "seasons": {
+    "2015": {
+      "total_players": 16155,
+      "zero_value_players": 311,
+      "median_value_eur": 350000.0,
+      "p90_value_eur": 2500000.0,
+      "mean_value_eur": 1060882.451253482
+    },
+    "2016": {
+      "total_players": 15623,
+      "zero_value_players": 233,
+      "median_value_eur": 575000.0,
+      "p90_value_eur": 4000000.0,
+      "mean_value_eur": 1705763.553734878
+    },
+    "2017": {
+      "total_players": 17597,
+      "zero_value_players": 310,
+      "median_value_eur": 650000.0,
+      "p90_value_eur": 4300000.0,
+      "mean_value_eur": 1927060.0102290164
+    },
+    "2018": {
+      "total_players": 17954,
+      "zero_value_players": 241,
+      "median_value_eur": 700000.0,
+      "p90_value_eur": 6500000.0,
+      "mean_value_eur": 2372106.4943745127
+    },
+    "2019": {
+      "total_players": 18085,
+      "zero_value_players": 241,
+      "median_value_eur": 675000.0,
+      "p90_value_eur": 6500000.0,
+      "mean_value_eur": 2396714.791263478
+    },
+    "2020": {
+      "total_players": 18483,
+      "zero_value_players": 250,
+      "median_value_eur": 725000.0,
+      "p90_value_eur": 6500000.0,
+      "mean_value_eur": 2461421.738895201
+    },
+    "2021": {
+      "total_players": 18944,
+      "zero_value_players": 237,
+      "median_value_eur": 650000.0,
+      "p90_value_eur": 6000000.0,
+      "mean_value_eur": 2224813.2918074327
+    }
+  },
+  "transitions": {
+    "2015->2016": {
+      "start_season_players": 16155,
+      "overlapping_players": 11235,
+      "attrition_count": 4920,
+      "attrition_rate": 0.3045
+    },
+    "2016->2017": {
+      "start_season_players": 15623,
+      "overlapping_players": 11443,
+      "attrition_count": 4180,
+      "attrition_rate": 0.2676
+    },
+    "2017->2018": {
+      "start_season_players": 17597,
+      "overlapping_players": 12606,
+      "attrition_count": 4991,
+      "attrition_rate": 0.2836
+    },
+    "2018->2019": {
+      "start_season_players": 17954,
+      "overlapping_players": 12689,
+      "attrition_count": 5265,
+      "attrition_rate": 0.2932
+    },
+    "2019->2020": {
+      "start_season_players": 18085,
+      "overlapping_players": 13194,
+      "attrition_count": 4891,
+      "attrition_rate": 0.2704
+    },
+    "2020->2021": {
+      "start_season_players": 18483,
+      "overlapping_players": 13275,
+      "attrition_count": 5208,
+      "attrition_rate": 0.2818
+    }
+  },
+  "zero_value_analysis_2021": {
+    "total_zero_val_players": 237,
+    "pct_clubless": 94.9367088607595,
+    "pct_zero_wage": 94.9367088607595
+  }
+}
